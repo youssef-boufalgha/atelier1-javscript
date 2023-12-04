@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// ------------ Debut Question1---------------------------------------------------------
+        function inverseCh(ch){
+            return ch.split('').reverse().join('');
+        }
+       
+        alert(inverseCh("3INFOB"));
+// ------------ Debut Question1---------------------------------------------------------
+
+// ------------ Debut Question2---------------------------------------------------------
+        function verifMail(mail) {
+        if ((mail.indexOf("@")>=0)&&(mail.indexOf(".")>=0)) {
+                console.log(mail + " valide");
+                
+        } else {
+                console.log(mail + " n'est pas valide");
+      }
+     
+      }
+      //Test
+      verifMail("test");
+      verifMail("foulen@gmail.com");
+      // ------------ Fin Question2---------------------------------------------------------
+// ------------ Debut Question3---------------------------------------------------------
+      function convertCh(ch) {
+       var ch2=ch.charAt(0).toUpperCase() + ch.substring(1).toLowerCase();
+       console.log(ch2);
+      }
+//test
+convertCh("FOULEN");
+convertCh("foulen");
+// ------------ Fin Question3---------------------------------------------------------
+// ------------ Debut Question4---------------------------------------------------------
+function Remplace(ch,c,newCh) {
+  var i=0
+  while (i!=-1) {
+    i=ch.indexOf(c,i);
+    if (i>=0) {
+        ch=ch.substring(0,i)+newCh+ch.substring(i+c.length);
+      i+=newCh.length;
+    }
+  }
+  return ch;
+}
+    //Test
+    var chaine="C'est un cours d'initiation au js, le js est un langage de programmation";
+    alert(Remplace(chaine, "js", "JavaScript"));
+
+    // ------------ Fin Question4---------------------------------------------------------
+        </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // ------------ Debut Question1---------------------------------------------------------
+       function somme(x, y) {
+        if (typeof x !== "number" || typeof y !== "number") {
+        return "Erreur : veuillez entrer deux nombres!";
+            }
+        return x + y;
+        }
+        //Exemple de test
+        alert(somme(4,5));
+        alert(somme('test',1))
+// ------------ Fin Question1---------------------------------------------------------
+        // ------------ Debut Question2---------------------------------------------------------
+        function multiple(){
+            for(let i = 10;i <= 1000;i+=10) {
+            console.log(i);
+        }
+       }
+       multiple();
+// ------------ fin Question2---------------------------------------------------------
+// ------------ Debut Question3---------------------------------------------------------
+       function inverse(x,y){
+        tmp=x;
+        x=y;
+        y=tmp;
+        console.log("a= "+x+" b= "+ y);
+       }
+       var a=5,b=3;
+       console.log("--------Avant inversion----")
+       console.log("a= "+a+" b= "+ b);
+       console.log("----- Aprés inversion-----");
+       inverse(a,b);
+// ------------ Fin Question3---------------------------------------------------------
+        </script>
+</body>
+</html>

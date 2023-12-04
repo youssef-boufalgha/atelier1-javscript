@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Exercice5
+    </title>
+</head>
+<body>
+    <script>
+// ------------ Debut Question1---------------------------------------------------------
+       function evenNumbers (number) {
+          return number % 2 === 0
+    }
+// ------------ Fin Question1---------------------------------------------------------
+
+// ------------ Debut Question2---------------------------------------------------------
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(numbers.filter(function evenNumbers (number){ return number % 2 === 0
+}));
+// ------------ Fin Question2---------------------------------------------------------
+
+// ------------ Debut Question3---------------------------------------------------------
+function dernierNElement(tab, n) {
+    if(n<=tab.length)
+        return tab.slice(tab.length-n, tab.length);
+        else 
+        return "Veuillez choisir une autre valeur du n "
+    
+}
+console.log(dernierNElement(numbers, 0));
+console.log(dernierNElement(numbers, 3));
+console.log(dernierNElement(numbers, 12));
+// ------------ Fin Question3---------------------------------------------------------
+        </script>
+</body>
+</html>
